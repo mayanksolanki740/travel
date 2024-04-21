@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">TRAVELER</a></div>
+            <ul class="items">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="Contact">Contact</a></li>
+            </ul> 
+            <a href="" class="actionbtn">Explore</a>
+            <div class="togglebutton">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdownmenu">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="Contact">Contact</a></li>
+            <li><a href="" class="actionbtn">Explore</a></li>
+        </div>
+    </header>
+    <div class="main">
+        <section id="heading">
+            <h1>Find Your Destination!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laborum ea sint incidunt obcaecati autem placeat recusandae! <br>
+                Nisi beatae similique, assumenda, odit excepturi, reiciendis aliquam praesentium rem dolores maiores veritatis?</p>
+        </section>
+    </div>
+        <div class="main2">
+            <section class="heading2">
+                <h1>Category</h1>
+                <p>We Offer Best Services</p>
+            </section>
+        <div class="imgcontainer">
+            <div class="item">
+                <img src="antenna.png" alt="" class="img1">
+                <h2>Calculated Weather</h2>
+                <p>weather is checked<br>before your journey</p>
+            </div>
+            <div class="item">
+                <img src="plane.jpg" alt="" class="img2">
+                <h2>Best Flights</h2>
+                <p>well maintained flight with a polite staff</p>
+            </div>
+            <div class="item">
+                <img src="mic.jpg" alt="">
+                <h2>Local Events</h2>
+                <p>events organised<br>any body can listen</p>
+            </div>
+            <div class="item">
+                <img src="setting.png" alt="" class="img4">
+                <h2>Customization</h2>
+                <p>we deliver outsource<br>services for our customers</p>
+            </div>    
+        </div>
+        </div>
+        <div class="main3">
+            <section>
+                <div class="heading3">
+                    <h1>Top Selling</h1>
+                    <p>Top Destinations</p>
+                </div>
+            </section>
+            <div class="imgcontainer1">
+                <div class="item1">
+                    <img src="bali.webp" alt="">
+                </div>
+                <div class="item1">
+                    <img src="hongkong.webp" alt="">
+                </div>
+                <div class="item1">
+                    <img src="london.webp" alt="">
+                </div>
+                <div class="item1">
+                    <img src="paris.jpg" alt="">
+                </div>
+            </div>
+            <div class="headingcontainer">
+                <h2>BALI</h2>
+                <h2>HONG KONG</h2>
+                <h2>LONDON</h2>
+                <h2>PARIS</h2>    
+            </div>
+        </div>
+        <div class="main4">
+            <section>
+            <div class="heading4">
+                <h1>Photo Gallery</h1>
+                <p>Photo's From Travelers</p>
+            </div>
+            </section>
+            <div class="container">
+                <img src="1.jpg" alt="" class="image custom custom-1">
+                <img src="2.jpg" alt="" class="image custom custom-2">
+                <img src="3.jpg" alt="" class="image custom custom-3">
+                <img src="4.jpg" alt="" class="image custom custom-4">
+                <img src="5.jpg" alt="" class="image custom custom-5">
+                <img src="6.jpg" alt="" class="image custom custom-6">
+                <img src="7.jpg" alt="" class="image custom custom-7">
+                <img src="8.jpg" alt="" class="image custom custom-8">
+            </div>
+            <div class="email">
+                <h2>Explore more</h2>
+                <form>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="endcontent">
+                <div class="end">
+                    <h2>Services</h2>
+                    <p>Email Marketing<br>Campaigns<br>Branding<br>Offline</p>
+                </div>
+                <div class="end">
+                    <h2>About</h2>
+                    <p>Our Story<br>Benefits<br>Team<br>Careers</p>
+                </div>
+                <div class="end">
+                    <h2>Help</h2>
+                    <p>FAQs<br>Contact Us</p>
+                </div>
+                <div class="end">
+                    <h2>Social</h2>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+    <script>
+        const togglebtn = document.querySelector(".togglebutton");
+        const togglebtnitem = document.querySelector(".togglebutton i");
+        const dropdown = document.querySelector(".dropdownmenu");
+
+        togglebtn.onclick = function () {
+            dropdown.classList.toggle("open");
+            const isopen = dropdown.classList.contains("open");
+
+            togglebtnitem.classList = isopen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars";
+        };
+    </script>
+</body>
+</html>
